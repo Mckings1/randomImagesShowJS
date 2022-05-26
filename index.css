@@ -11,6 +11,16 @@
     width: 50vh;
 }
 
-.second_div{
-    
+.second_div{ 
+    /* width: 100%; */
+    height: 32vh;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.second_div img{
+    width: 25vh;
+    height: 30vh;
 }
