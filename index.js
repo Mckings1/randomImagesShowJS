@@ -1,4 +1,4 @@
-const image = [
+var images = [
     '<img src="car1.jfif" alt="">',
     '<img src="car2.jfif" alt="">',
     '<img src="car5.jfif" alt="">',
@@ -10,11 +10,12 @@ const image = [
     '<img src="car10.jfif" alt="">'
 ]
 
-        i=-1;
+        i=1;
        function displayCars(){
-           i = Math.floor(Math.random()*10);
-            a = image[i];
+           i = Math.floor(Math.random()* images.length);
+            a = images[i];
            display.innerHTML = a;
+        //    document.write(images[index]);
            setTimeout("displayCars()", 1000);
        }
 
